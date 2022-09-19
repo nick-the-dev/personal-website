@@ -85,10 +85,16 @@ a {
 // About
 .about {
   min-height: calc(100vh - 100px);
+  min-height: calc(var(--app-height) - 100px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+
+  @include mobile {
+    min-height: calc(100vh - 90px);
+    min-height: calc(var(--app-height) - 90px);
+  }
 }
 
 .about h1 .small {
