@@ -15,8 +15,8 @@
     "@typescript-eslint",
     "prettier",
     "sort-imports-es6-autofix",
-    "import",
-    "no-relative-import-paths"
+    "import"
+    //"no-relative-import-paths"
   ],
   "extends": [
     "eslint:recommended",
@@ -26,12 +26,12 @@
     "plugin:valtio/recommended"
   ],
   "rules": {
-    "no-relative-import-paths/no-relative-import-paths": [
-      "error",
-      {
-        "allowSameFolder": false
-      }
-    ],
+    // "no-relative-import-paths/no-relative-import-paths": [
+    //   "error",
+    //   {
+    //     "allowSameFolder": false
+    //   }
+    // ],
     "@typescript-eslint/no-floating-promises": "error",
     "require-await": "error",
     "react-hooks/exhaustive-deps": "error",

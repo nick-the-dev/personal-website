@@ -1,18 +1,13 @@
-import {
-  classnames,
-  container,
-  margin,
-  maxWidth,
-  padding,
-} from 'classnames/tailwind'
+import './root.scss'
 import ChildrenProp from 'models/ChildrenProp'
+import Header from './Header'
 
-const root = classnames(
-  container('container'),
-  margin('mx-auto'),
-  padding('pb-10', 'py-4'),
-  maxWidth('max-w-4xl')
-)
 export default function ({ children }: ChildrenProp) {
-  return <div className={root}>{children}</div>
+  return (
+    <>
+      <Header />
+      <div className="container">{children}</div>
+      {/* <Footer /> */}
+    </>
+  )
 }

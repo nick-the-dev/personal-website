@@ -1,0 +1,137 @@
+@import 'mixins';
+
+* {
+  color: #ece4b7;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+  background: #000;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+a {
+  color: #dd6031;
+}
+
+.btn {
+  color: #dd6031;
+  border: 1px solid #dd6031;
+  display: inline-block;
+  padding: 10px 31px;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-weight: 500;
+
+  &:hover {
+    background: #dd6031;
+    color: #fff;
+  }
+}
+
+// Header
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  min-height: 100px;
+
+  @include mobile {
+    padding: 10px 20px;
+    min-height: 90px;
+  }
+}
+
+.header__logo {
+  width: 50px;
+  height: 50px;
+  background: #dd6031;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: 900;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__nav-link {
+  font-size: 14px;
+
+  &--btn {
+    font-size: 20px;
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+}
+
+// About
+.about {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about h1 .small {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.about h1 .big {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  @include mobile {
+    font-size: 60px;
+  }
+}
+
+.about h2 {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #eabe7c;
+
+  @include mobile {
+    font-size: 50px;
+  }
+}
+
+.about .short-desc {
+  max-width: 540px;
+  margin-top: 30px;
+  line-height: 1.8;
+
+  & a {
+    text-decoration: underline;
+  }
+}
+
+.about .btn {
+  margin-top: 50px;
+
+  @include mobile {
+    margin-top: 40px;
+  }
+}

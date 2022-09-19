@@ -23,5 +23,5 @@
       "react-dom": ["../node_modules/preact/compat/"]
     }
   },
-  "include": ["src"]
+  "include": ["src/**/*"]
 }

@@ -1,10 +1,10 @@
-import MainBlock from 'components/MainBlock'
+import Main from 'components/Main'
 import Root from 'components/Root'
 
 export default function () {
   return (
     <Root>
-      <MainBlock />
+      <Main />
     </Root>
   )
 }
