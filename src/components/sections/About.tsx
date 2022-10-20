@@ -10,8 +10,8 @@ export default function () {
         I’m a web developer specializing in building exceptional digital
         experiences. Currently, I’m focused on building accessible,
         human-centered products at{' '}
-        <a href="https://www.richkid.co.il/" target="_blank">
-          Richkid Digital
+        <a href="https://qualityscore.co/" target="_blank">
+          Quality Score LTD
         </a>
       </p>
       <a href="mailto:gluknik@gmail.com" class="btn" target="_blank">
